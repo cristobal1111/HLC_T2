@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1>Bienvenidos a mi página web</h1>
+    <p>Hola, soy Cristóbal. Este es un texto en <i>cursiva</i> y también hay texto <del>tachado</del>.</p>
+    <p></p>Me encanta el deporte. Mis deportes favoritos son el <b>fútbol</b> y el <b>baloncesto</b>.</p>
+    <p>También disfruto de actividades al aire libre.</p>
+
+    <hr>
+
+    <h2>Mis Hobbies</h2>
+    <ul>
+        <li>Leer</li>
+        <li>Escuchar música</li>
+        <li>Jugar videojuegos</li>
+    </ul>
+    <p>Soy un gran fan de <u>HLC</u>.</p>
+
+    <h3>Más sobre mí</h3>
+    <p>Me gusta viajar y conocer nuevas culturas.</p>
+
+    <h3>Mis lugares favoritos</h3>
+    <p>Me gusta visitar:</p>
+    <ol>
+        <li>La playa</li>
+        <li>Las montañas</li>
+        <li>Las ciudades históricas</li>
+    </ol>
+
+    <h4>Contacto</h4>
+    <p>Pueden contactarme en mi email: miemail@example.com</p>
+
+    <!-- Contenedor donde se añadirá la imagen -->
+    <div id="imagenContainer"></div>
+
+    <!-- Script que agrega la imagen dinámicamente -->
+    <script>
+        // Crear un elemento de imagen
+        const imagen = document.createElement('img');
+
+        // Asignar la fuente de la imagen (cambia la ruta según tu imagen)
+        imagen.src = 'ruta/a/tu/imagen.jpg';  // Cambia 'ruta/a/tu/imagen.jpg' por la ruta correcta
+
+        // Agregar una descripción alternativa (alt) para accesibilidad
+        imagen.alt = 'Descripción de la imagen';
+
+        // Ajustar el tamaño de la imagen (opcional)
+        imagen.style.width = '300px';  // Puedes cambiar el tamaño según sea necesario
+        imagen.style.height = 'auto';
+
+        // Agregar la imagen al contenedor en el HTML
+        document.getElementById('imagenContainer').appendChild(imagen);
+    </script>
+</body>
+</html>
